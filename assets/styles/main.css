@@ -97,7 +97,7 @@ header nav .navlinks a.active::before{
 }
 
 header nav .navlinks a:hover{
-    color: #ddd;
+    color: #ccc;
 }
 
 
