@@ -92,12 +92,12 @@ header nav .navlinks a::before{
     transition: .5s;
 }
 
-header nav .navlinks a.active::before{
+header nav .navlinks a:is(.active, :hover)::before{
     width: 100%;
 }
 
 header nav .navlinks a:hover{
-    color: #ccc;
+    color: #ddd;
 }
 
 
