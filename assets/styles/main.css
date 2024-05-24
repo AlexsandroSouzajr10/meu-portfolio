@@ -96,11 +96,6 @@ header nav .navlinks a:is(.active, :hover)::before{
     width: 100%;
 }
 
-header nav .navlinks a:hover{
-    color: #ddd;
-}
-
-
 nav input[type="radio"]{
     display: none;
 }
