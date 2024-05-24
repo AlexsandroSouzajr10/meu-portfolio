@@ -1,0 +1,214 @@
+/* == PRINCIPAL == */
+@media screen and (max-width: 1090px){
+    .container .main{
+        padding: 20px;
+    }
+    .container .socials{
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width: 870px){
+    .container{
+        background-position: left;
+    }
+    .container .main{
+        padding-top: 120px;
+        flex-direction: column;
+    }
+    .container .main .socials{
+        flex-direction: row;
+        position: absolute;
+        left: 25px;
+        top: 80px;
+        transform: translate(0);
+    }
+    .main-content{
+        max-width: 100%;
+    }
+    .imageBox img{
+        width: 340px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    header{
+        padding: 20px 30px;
+    }
+    .container .main .socials{
+        flex-direction: row;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .main-content{
+        text-align: center;
+    }
+    .main-content h2{
+        justify-content: center;
+    }
+    .main-content .buttons{
+        justify-content: center;
+    }
+    .buttons a{
+        width: 100%;
+    }
+    .imageBox img{
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .card{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .main-content h2{
+        font-size: 1.65em;
+    }
+    .main-content p{
+        font-size: .9em;
+    }
+}
+
+/* == //PRINCIPAL == */
+
+
+/* == MENU == */
+
+@media screen and (max-width: 665px){
+    .btn{
+        display: block;
+        z-index: 2;
+    }
+
+    .close-btn{
+        display: none;
+    }
+
+    #menu-btn:checked ~ .btn.menu-btn{
+        display: none;
+    }
+
+    #menu-btn:checked ~ .btn.close-btn{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        width: 100%;
+        min-height: 100vh;
+        max-width: 280px;
+        background: #1A1819;
+        display: block;
+        padding: 50px 10px;
+        line-height: 60px;
+        overflow: hidden;
+        transition: .5s ease-in-out;
+        z-index: -1;
+    }
+
+    header nav .navlinks{
+        display: block;
+        text-align: left;
+    }
+
+    header nav .navlinks a{
+        position: relative;
+        top: 20px;
+        font-size: 18px;
+    }
+
+    header nav .navlinks .contact-visible{
+        color: #f2f2f2;
+        border: none;
+        background: transparent;
+        padding: 0;
+    }
+
+    #menu-btn:checked ~ .navlinks{
+        left: 0;
+    }
+}
+
+/* == //MENU == */
+
+
+/* == SOBRE == */
+
+@media screen and (max-width: 1170px){
+    .about-container{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .about-container{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .about-content{
+        text-align: center;
+    }
+    .about-image{
+        order: 1;
+    }
+    .about-image img{
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .about-image img{
+        width: 240px;
+    }
+}
+
+/* == //SOBRE == */
+
+
+/* == HABILIDADES == */
+
+@media screen and (max-width: 768px){
+    .skills{
+        padding: 0;
+        padding-top: 2em;
+    }
+    .skills__container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .heading__title h2{
+        font-size: 1.8em;
+    }
+}
+
+/* == //HABILIDADES == */
+
+
+@media screen and (max-width: 860px){
+    footer .footer__content{
+        flex-direction: column;
+        gap: .8em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .project__content .view__project{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .footer__content .socials{
+        flex-direction: column;
+    }
+}
