@@ -54,10 +54,6 @@ header.sticky::before{
     height: 100%;
 }
 
-header.sticky nav .navlinks a:hover{
-    color: #a8a8a8;
-}
-
 header nav{
     display: flex;
     justify-content: space-between;
