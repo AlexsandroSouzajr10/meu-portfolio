@@ -80,9 +80,41 @@
 
 /* == MENU == */
 
-@media screen and (max-width: 665px){
-    .btn{
+@media screen and (max-width: 410px){
+    header nav{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header nav .navlinks a::before{
+        background: transparent;
+    }
+
+    header nav .navlinks a:hover{
+        color: #a8a8a8;
+    }
+
+    .menu{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        min-height: 100vh;
+        max-width: 280px;
+        background: var(--background-navbar);
         display: block;
+        padding: 50px 10px;
+        line-height: 60px;
+        overflow: hidden;
+        transition: .5s ease-in-out;
+    }
+
+    #menu-btn:checked ~ .navlinks{
+        left: 0;
+    }
+
+    .btn{
+        display: flex;
         z-index: 2;
     }
 
@@ -98,24 +130,9 @@
         display: block;
     }
 
-    .menu{
-        position: fixed;
-        top: 0px;
-        left: -100%;
-        width: 100%;
-        min-height: 100vh;
-        max-width: 280px;
-        background: #1A1819;
-        display: block;
-        padding: 50px 10px;
-        line-height: 60px;
-        overflow: hidden;
-        transition: .5s ease-in-out;
-        z-index: -1;
-    }
-
     header nav .navlinks{
         display: block;
+        padding: 15% 5%;
         text-align: left;
     }
 
@@ -123,17 +140,6 @@
         position: relative;
         top: 20px;
         font-size: 18px;
-    }
-
-    header nav .navlinks .contact-visible{
-        color: #f2f2f2;
-        border: none;
-        background: transparent;
-        padding: 0;
-    }
-
-    #menu-btn:checked ~ .navlinks{
-        left: 0;
     }
 }
 
@@ -175,10 +181,9 @@
 
 /* == HABILIDADES == */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 700px){
     .skills{
-        padding: 0;
-        padding-top: 2em;
+        padding-top: 5em;
     }
     .skills__container{
         flex-direction: column;
@@ -188,6 +193,13 @@
 @media screen and (max-width: 560px){
     .heading__title h2{
         font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .skills__column__one__language{
+        flex-direction: column;
+        margin: 1em;
     }
 }
 
