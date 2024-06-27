@@ -3,25 +3,15 @@
     .container .main{
         padding: 20px;
     }
-    .container .socials{
-        transform: translate(0);
-    }
 }
 
-@media screen and (max-width: 870px){
+@media screen and (max-width: 880px){
     .container{
         background-position: left;
     }
     .container .main{
         padding-top: 120px;
         flex-direction: column;
-    }
-    .container .main .socials{
-        flex-direction: row;
-        position: absolute;
-        left: 25px;
-        top: 80px;
-        transform: translate(0);
     }
     .main-content{
         max-width: 100%;
@@ -39,9 +29,7 @@
     }
     .container .main .socials{
         flex-direction: row;
-        position: relative;
-        left: 0;
-        top: 0;
+        justify-content: center;
     }
     .main-content{
         text-align: center;
@@ -80,18 +68,30 @@
 
 /* == MENU == */
 
-@media screen and (max-width: 410px){
+@media screen and (max-width: 550px){
+    header{
+        position: fixed;
+    }
+    header::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: transparent;
+        transition: .5s ease-in;
+        z-index: -1;
+    }
+    
+    header.sticky::before{
+        background: var(--background-navbar);
+        height: 100%;
+    }
+
     header nav{
         display: flex;
         justify-content: flex-start;
-    }
-
-    header nav .navlinks a::before{
-        background: transparent;
-    }
-
-    header nav .navlinks a:hover{
-        color: #a8a8a8;
     }
 
     .menu{
@@ -104,7 +104,6 @@
         background: var(--background-navbar);
         display: block;
         padding: 50px 10px;
-        line-height: 60px;
         overflow: hidden;
         transition: .5s ease-in-out;
     }
@@ -131,15 +130,20 @@
     }
 
     header nav .navlinks{
-        display: block;
-        padding: 15% 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 20% 5%;
         text-align: left;
     }
 
     header nav .navlinks a{
         position: relative;
+        display: flex;
+        gap: .5em;
         top: 20px;
         font-size: 18px;
+        width: max-content;
     }
 }
 
@@ -196,9 +200,10 @@
     }
 }
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 412px){
     .skills__column__one__language{
         flex-direction: column;
+        align-items: center;
         margin: 1em;
     }
 }
