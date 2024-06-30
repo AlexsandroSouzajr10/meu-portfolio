@@ -10,16 +10,15 @@
         background-position: left;
     }
     .container .main{
-        padding-top: 120px;
+        padding: 6rem 1rem 0;
         flex-direction: column;
+        gap: 2rem;
     }
     .main-content{
         max-width: 100%;
     }
     .imageBox img{
         width: 320px;
-        margin-top: 30px;
-        margin-bottom: 20px;
     }
 }
 
@@ -56,10 +55,7 @@
 
 @media screen and (max-width: 410px){
     .main-content h2{
-        font-size: 1.65em;
-    }
-    .main-content p{
-        font-size: .9em;
+        font-size: 2rem;
     }
 }
 
@@ -154,7 +150,8 @@
 
 @media screen and (max-width: 1170px){
     .about-container{
-        padding: 0;
+        padding: 8% 0;
+        gap: 1em;
     }
 }
 
@@ -165,18 +162,25 @@
     }
     .about-content{
         text-align: center;
+        margin: 0;
     }
     .about-image{
         order: 1;
     }
     .about-image img{
-        width: 320px;
+        max-width: 100%;
+        width: 280px;
     }
 }
 
 @media screen and (max-width: 600px){
     .about-image img{
-        width: 240px;
+        width: 250px;
+    }
+}
+@media screen and (max-width: 400px){
+    .about-container{
+        padding: 15% 0;
     }
 }
 
@@ -186,10 +190,8 @@
 /* == HABILIDADES == */
 
 @media screen and (max-width: 700px){
-    .skills{
-        padding-top: 5em;
-    }
-    .skills__container{
+    .skills .skills__container{
+        align-items: center;
         flex-direction: column;
     }
 }
