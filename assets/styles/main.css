@@ -400,17 +400,39 @@ nav input[type="radio"] {
   margin: auto;
 }
 
+.box__games{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.box__games .box__title{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-basis: 70%;
+  color: #fff;
+  font-size: 2.15rem;
+  font-family: var(--font-play);
+}
+
 .project__container .project__item {
   max-width: 340px;
   text-align: center;
   z-index: 1;
+  margin-bottom: 2rem;
 }
 
 .project__item img {
   max-width: 100%;
   width: 25em;
   height: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 18/9;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: bottom;

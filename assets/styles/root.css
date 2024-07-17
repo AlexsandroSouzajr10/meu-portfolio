@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 :root{
     --color-primary: #f3f3f3;
@@ -19,4 +20,5 @@
     --font-primaria: "Montserrat", sans-serif;
     --font-secondaria: "Poppins", sans-serif;
     --font-noto-sans: "Noto Sans", sans-serif;
+    --font-play: "Play", sans-serif;
 }
