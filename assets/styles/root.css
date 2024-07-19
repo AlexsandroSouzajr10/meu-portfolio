@@ -5,20 +5,24 @@
 
 :root{
     --color-primary: #f3f3f3;
+    --color-secondary: #000;
 
-    --background-navbar: #020202;
-    --color-name-title: #11d75d;
-
-    --color--title: #0688c0;
-    --color--border-text-language: #015668;
-    --color--border-button-project: #0F81C7;
-    --color--border-button-project-hover: #0F81C7;
-
-    --background--container-main-about: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='250' preserveAspectRatio='none' viewBox='0 0 1440 250'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1056%26quot%3b)' fill='none'%3e%3crect width='1440' height='250' x='0' y='0' fill='rgba(30%2c 4%2c 77%2c 0.300)'%3e%3c/rect%3e%3cpath d='M18 250L268 0L511 0L261 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1057%26quot%3b)'%3e%3c/path%3e%3cpath d='M246.60000000000002 250L496.6 0L744.1 0L494.1 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1057%26quot%3b)'%3e%3c/path%3e%3cpath d='M490.20000000000005 250L740.2 0L813.7 0L563.7 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1057%26quot%3b)'%3e%3c/path%3e%3cpath d='M727.8000000000001 250L977.8000000000001 0L1151.8000000000002 0L901.8000000000001 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1057%26quot%3b)'%3e%3c/path%3e%3cpath d='M1409 250L1159 0L1118.5 0L1368.5 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1058%26quot%3b)'%3e%3c/path%3e%3cpath d='M1178.4 250L928.4000000000001 0L670.4000000000001 0L920.4000000000001 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1058%26quot%3b)'%3e%3c/path%3e%3cpath d='M927.8 250L677.8 0L440.79999999999995 0L690.8 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1058%26quot%3b)'%3e%3c/path%3e%3cpath d='M720.1999999999999 250L470.19999999999993 0L170.19999999999993 0L420.19999999999993 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1058%26quot%3b)'%3e%3c/path%3e%3cpath d='M1260.9022045090974 250L1440 70.9022045090974L1440 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1057%26quot%3b)'%3e%3c/path%3e%3cpath d='M0 250L179.0977954909026 250L 0 70.9022045090974z' fill='url(%26quot%3b%23SvgjsLinearGradient1058%26quot%3b)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1056'%3e%3crect width='1440' height='250' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1057'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.0)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.0)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1058'%3e%3cstop stop-color='rgba(175%2c 20%2c 185%2c 0.40)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.10)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
-
-    --min-height: 100vh;
     --font-primaria: "Montserrat", sans-serif;
     --font-secondaria: "Poppins", sans-serif;
     --font-noto-sans: "Noto Sans", sans-serif;
     --font-play: "Play", sans-serif;
+    --min-height: 100dvh;
+
+    --background-navbar: #020202;
+    --color-name-title: #11d75d;
+
+    --background-main-about: url(/assets/images/backgrounds/bg-main.svg) no-repeat center/cover;
+    --background-skills: url(/assets/images/backgrounds/bg-skills.svg) no-repeat center/cover;
+    --background-projects: url(/assets/images/backgrounds/bg-projects.svg) no-repeat center/cover;
+
+    /* == Skills Cards & Projects Cards == */
+    --color--title: #0688c0;
+    --color--border-text-language: #015668;
+    --color--border-button-project: #0066ff;
+    --color--border-button-project-hover: #0a4a71;
 }
