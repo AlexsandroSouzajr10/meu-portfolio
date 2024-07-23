@@ -105,6 +105,3 @@ function topScroll() {
         topo.classList.remove('show');
     }
 };
-
-
-AOS.init();
