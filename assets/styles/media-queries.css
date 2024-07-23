@@ -10,6 +10,10 @@
   .burger, .close-menu{
     display: block;
   }
+
+  .burger.active{
+    opacity: 0;
+  }
   
   .close-menu{
     position: absolute;
@@ -29,11 +33,10 @@
     display: block;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -500px;
     width: 100%;
     min-height: 100vh;
     max-width: 280px;
-    clip-path: circle(0 at 100% 0);
     background: var(--background-navbar);
     padding: 50px 10px;
     overflow: hidden;
@@ -41,7 +44,7 @@
   }
 
   .menu.active{
-    clip-path: circle(141.2% at 100% 0);
+    right: 0;
   }
 
   header nav .navlinks {
@@ -68,7 +71,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 22, 0.883);
+    background: #000016e1;
     visibility: hidden;
     opacity: 0;
     z-index: -1;
@@ -132,6 +135,12 @@
   }
 }
 
+@media screen and (max-width: 345px){
+  .main-content span{
+    white-space: pre-wrap;
+  }
+}
+
 /* == //PRINCIPAL == */
 
 
@@ -186,65 +195,32 @@
 
 /* == HABILIDADES == */
 
-@media screen and (max-width: 700px) {
-  .skills .skills__container {
-    align-items: center;
+@media screen and (max-width: 830px){
+  .skills .skills__container{
     flex-direction: column;
-    padding: 0;
-  }
-
-  .skills__column__one {
-    margin-bottom: 20px;
-  }
-
-  .skills__column__one__language {
-    margin-bottom: 2rem;
-  }
-
-  .skills__column__two__title {
-    margin-bottom: 20px;
+    align-items: center;
   }
 }
 
-@media screen and (max-width: 560px) {
-  .heading__title h2 {
-    font-size: 1.8em;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .skills .skills__title {
-    bottom: 0;
-  }
-
-  .skills__column__one__language,
-  .skills__column__two__course {
-    flex-direction: column;
-    align-items: center;
-    margin: 1em;
-  }
-
-  .skills__column__one__language {
-    margin-bottom: 2.15rem;
-  }
-
-  .skills__column__one__language div {
-    width: 55%;
-  }
-
-  .skills__column__two__course div {
-    width: 100%;
+@media screen and (max-width: 450px){
+  .skill__wrapper .skill__inner{
+    flex-wrap: wrap;
   }
 }
 
 /* == //HABILIDADES == */
 
+/* == //PROJETOS == */
 
-/* == PROJETOS == */
+@media screen and (max-width: 992px){
+  .project__card__content .view__project{
+    width: 60%;
+  }
+}
 
-@media screen and (max-width: 600px) {
-  .project__content .view__project {
-    width: 100%;
+@media screen and (max-width: 600px){
+  .project__card__content .view__project{
+    width: 80%;
   }
 }
 

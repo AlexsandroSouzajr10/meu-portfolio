@@ -2,27 +2,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
-    --color-primary: #f3f3f3;
+    --color-primary: #ececec;
     --color-secondary: #000;
 
     --font-primaria: "Montserrat", sans-serif;
     --font-secondaria: "Poppins", sans-serif;
     --font-noto-sans: "Noto Sans", sans-serif;
     --font-play: "Play", sans-serif;
+    --font-inter: "Inter", sans-serif;
     --min-height: 100dvh;
 
-    --background-navbar: #020202;
+    --background-navbar: #0E0220;
     --color-name-title: #11d75d;
 
-    --background-main-about: url(/assets/images/backgrounds/bg-main.svg) no-repeat center/cover;
-    --background-skills: url(/assets/images/backgrounds/bg-skills.svg) no-repeat center/cover;
-    --background-projects: url(/assets/images/backgrounds/bg-projects.svg) no-repeat center/cover;
+    --background-main: #071952;
+    --background-about: #088395;
+    --background-skills: #005A8D;
+    --background-projects: #F5F5F5;
 
     /* == Skills Cards & Projects Cards == */
-    --color--title: #0688c0;
-    --color--border-text-language: #015668;
-    --color--border-button-project: #0066ff;
-    --color--border-button-project-hover: #0a4a71;
+    --background-skill-course: #28718e;
+
+    --bg-tags-filter-cards-projects: #1E212D;
+    --color-title-cards: #050101;
+    --bg-button-view-project: #0a619f;
+    --bg-button-view-project-hover: #06365b;
+
+    --background-footer: #022E57;
+
+    --color-topo: #fff;
+    --background-topo: #fff;
+    --color-icon-topo: #0000;
 }
