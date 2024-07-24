@@ -535,6 +535,8 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .container__footer .socials__footer{
@@ -588,7 +590,7 @@ footer p {
   align-items: center;
 }
 
-.topo.show{
+.topo.mostrarTopo{
   visibility: visible;
   transform: translateY(0);
 }

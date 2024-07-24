@@ -100,8 +100,8 @@ window.addEventListener('scroll', function() {topScroll()})
 
 function topScroll() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
-        topo.classList.add('show');
+        topo.classList.add('mostrarTopo');
     }else {
-        topo.classList.remove('show');
+        topo.classList.remove('mostrarTopo');
     }
 };
