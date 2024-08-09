@@ -16,9 +16,9 @@ burger.addEventListener("click", () => {
 
 closeMenu.addEventListener("click", () => {
     function menuClose() {
-        burger.classList.toggle("active");
-        menu.classList.toggle("active");
-        overlay.classList.toggle("active");
+        burger.classList.remove("active");
+        menu.classList.remove("active");
+        overlay.classList.remove("active");
     }
 
     menuClose();
@@ -26,9 +26,9 @@ closeMenu.addEventListener("click", () => {
 
  function linkActive(){
      this.classList.add("active");
-     burger.classList.toggle("active");
-     menu.classList.toggle("active");
-     overlay.classList.toggle("active");
+     burger.classList.remove("active");
+     menu.classList.remove("active");
+     overlay.classList.remove("active");
  };
 
 navLinks.forEach(i => i.addEventListener('click', linkActive));
